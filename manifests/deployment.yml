@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: abhinaybathinipipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: abhinaybathinipipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: abhinaybathinipipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: abhinaybathinipipelinesjavascriptdocker 
+          image: registry0123.azurecr.io/abhinaybathinipipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
